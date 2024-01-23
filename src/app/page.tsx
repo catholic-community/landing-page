@@ -1,11 +1,20 @@
-"use client";
+'use client'
 
-import OnboardingLayout from "@/components/layout/OnboardingLayout"
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import OnboardingLayout from '@/components/layout/OnboardingLayout'
 
 export default function Home() {
-  return (
-    <OnboardingLayout>
-      <h1>Hello Catholic Community!</h1>
-    </OnboardingLayout>
-  )
+	return (
+		<OnboardingLayout>
+			<Container
+				sx={{
+					py: 6,
+					px: 3
+				}}
+			>
+				<Typography>Hello Catholic Community!</Typography>
+			</Container>
+		</OnboardingLayout>
+	)
 }
