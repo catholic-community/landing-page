@@ -28,7 +28,7 @@ const LogoType = ({variant = 'header'}: {variant?: 'footer' | 'header'}) => {
 					fontWeight: 600,
 					fontSize: '1.25rem',
 					lineHeight: 'normal',
-					mt: 1
+					mt: 1.25
 				}}
 			>
 				Catholic Community
