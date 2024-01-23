@@ -8,7 +8,7 @@ const LogoType = ({variant = 'header'}: {variant?: 'footer' | 'header'}) => {
 		<Box
 			sx={{
 				display: 'flex',
-				alignItems: 'flex-end',
+				alignItems: 'center',
 				gap: 1
 			}}
 		>
@@ -26,8 +26,9 @@ const LogoType = ({variant = 'header'}: {variant?: 'footer' | 'header'}) => {
 				sx={{
 					color: variant === 'header' ? '#5F372B' : '#8B8B8B',
 					fontWeight: 600,
-					fontSize: '1.5rem',
-					lineHeight: 'normal'
+					fontSize: '1.25rem',
+					lineHeight: 'normal',
+					mt: 1
 				}}
 			>
 				Catholic Community
