@@ -1,28 +1,27 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import LogoType from '../Logo'
+import LogoType from '../LogoType'
 
 const Footer = () => {
 	return (
 		<Box
 			component="footer"
-			sx={{
+			sx={theme => ({
 				display: 'flex',
 				flexDirection: 'column',
 				alignItems: 'center',
 				justifyContent: 'center',
 				gap: 2,
-				bgcolor: '#F1F1F1',
+				bgcolor: theme.palette.grey[100],
 				height: 250,
-				width: '100%',
-				mt: 60
-			}}
+				width: '100%'
+			})}
 		>
-			<LogoType variant="footer" />
+			<LogoType component="footer" />
 			<Box>
 				<Typography
 					variant="body2"
-					sx={{color: '#8b8b8b', textAlign: 'center'}}
+					sx={theme => ({color: '#8b8b8b', textAlign: 'center'})}
 				>
 					Comunidade de Católicos Online
 				</Typography>
@@ -30,7 +29,7 @@ const Footer = () => {
 					variant="body2"
 					sx={{color: '#8b8b8b', mt: 1, textAlign: 'center'}}
 				>
-					© 2021 Todos os direitos reservados
+					© 2024 Todos os direitos reservados
 				</Typography>
 			</Box>
 		</Box>
