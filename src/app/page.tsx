@@ -11,7 +11,7 @@ import TabletDown from '@/components/layout/responsive/TabletDown'
 import Typography from '@mui/material/Typography'
 
 import './page.module.css'
-import { Button } from '@mui/material'
+import {Button} from '@mui/material'
 
 export default function LandingPage() {
 	return (
@@ -28,9 +28,7 @@ export default function LandingPage() {
 					backgroundColor: '#eea0280d'
 				}}
 			>
-				<Typography variant="h1">
-					{'Online Catholic Community'}
-				</Typography>
+				<Typography variant="h1">{'Online Catholic Community'}</Typography>
 				<Typography sx={{maxWidth: '600px', margin: '0 auto', mt: 2}}>
 					{
 						'Junte-se a comunidade de católicos online. Encontre uma igreja próxima. Leia e compartilhe artigos. Poste dúvidas e respostas. Conect-se com irmãos e irmãs em Cristo de todo o mundo e enriqueça sua vida espiritual.'
@@ -84,7 +82,7 @@ export default function LandingPage() {
 							flexDirection: 'column',
 							alignItems: 'center',
 							justifyContent: 'center',
-							textAlign: 'center',
+							textAlign: 'center'
 						}}
 					>
 						<Typography variant="h3" component="h2" color="white">
@@ -95,7 +93,13 @@ export default function LandingPage() {
 								'Em nossa seção de artigos, você não só encontra inspiração e conhecimento, mas também tem a facilidade de pesquisar conteúdos específicos. É um espaço para aprender, crescer e compartilhar - em breve, suas próprias reflexões também poderão ser parte deste acervo enriquecedor.'
 							}
 						</Typography>
-						<Button variant="contained" sx={{mt: 4}}>{'Ir para artigos'}</Button>
+						<Button
+							variant="contained"
+							sx={{mt: 4}}
+							onClick={() => window.open('/articles', '_self')}
+						>
+							{'Ir para artigos'}
+						</Button>
 					</Box>
 				</TabletDown>
 			</FullSection>
@@ -152,7 +156,7 @@ export default function LandingPage() {
 							flexDirection: 'column',
 							alignItems: 'center',
 							justifyContent: 'center',
-							textAlign: 'center',
+							textAlign: 'center'
 						}}
 					>
 						<Typography variant="h3" component="h2">
@@ -163,7 +167,13 @@ export default function LandingPage() {
 								'Procurando uma igreja próxima? Nosso mapa interativo facilitará a descoberta de igrejas católicas ao seu redor. Seja para participar da missa, eventos especiais e descobrir horários de confissões, nosso recurso em desenvolvimento o ajudará a encontrar um lar espiritual, não importa onde esteja.'
 							}
 						</Typography>
-						<Button variant="contained" sx={{mt: 4}}>{'Buscar no mapa'}</Button>
+						<Button
+							variant="contained"
+							sx={{mt: 4}}
+							onClick={() => window.open('/map', '_self')}
+						>
+							{'Buscar no mapa'}
+						</Button>
 					</Box>
 				</FullSection>
 			</TabletDown>
