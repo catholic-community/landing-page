@@ -2,7 +2,7 @@ import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import CssBaseline from '@mui/material/CssBaseline'
 import Providers from '@/providers/Providers'
-import LogoType from '../Logo'
+import LogoType from '../LogoType'
 import Footer from '../template/Footer'
 
 const Header = () => {
