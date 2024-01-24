@@ -22,17 +22,19 @@
 	"dependencies": {
 		"@emotion/react": "^11.11.3",
 		"@emotion/styled": "^11.11.0",
+		"@formatjs/intl-localematcher": "^0.5.4",
 		"@mui/material": "^5.15.6",
+		"@phosphor-icons/react": "^2.0.15",
+		"negotiator": "^0.6.3",
 		"next": "14.0.4",
-		"react": "^18",
-		"react-dom": "^18"
+		"react": "^18"
 	},
 	"devDependencies": {
 		"@cloudflare/next-on-pages": "^1.8.5",
 		"@cloudflare/workers-types": "^4.20240117.0",
+		"@types/negotiator": "^0.6.3",
 		"@types/node": "^20",
 		"@types/react": "^18",
-		"@types/react-dom": "^18",
 		"eslint": "^8",
 		"eslint-config-next": "14.0.4",
 		"eslint-config-prettier": "^9.1.0",
