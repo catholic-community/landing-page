@@ -6,7 +6,7 @@ import PageUnderConstructionAlert from '../../components/PageUnderConstructionAl
 export default function Map() {
 	return (
 		<OnboardingLayout>
-			<PageUnderConstructionAlert title="Map" />
+			<PageUnderConstructionAlert title="Mapa" />
 		</OnboardingLayout>
 	)
 }
