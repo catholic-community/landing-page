@@ -12,7 +12,7 @@ const Footer = () => {
 				alignItems: 'center',
 				justifyContent: 'center',
 				gap: 2,
-				bgcolor: theme.palette.grey[100],
+				bgcolor: theme.palette.mode === 'light' ? theme.palette.grey[100] : '#1B1B1B',
 				height: 250,
 				width: '100%'
 			})}

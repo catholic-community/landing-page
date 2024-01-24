@@ -5,8 +5,6 @@ import LandingPageLayout from '@/components/layout/LandingPageLayout'
 import FullSection from '@/components/template/FullSection'
 import ModuleInfoCard from '@/components/ModuleInfoCard'
 import Box from '@mui/material/Box'
-import TabletUp from '@/components/layout/responsive/TabletUp'
-import TabletDown from '@/components/layout/responsive/TabletDown'
 import Typography from '@mui/material/Typography'
 
 import './page.module.css'
@@ -24,11 +22,10 @@ export default function LandingPage() {
 					justifyContent: 'center',
 					margin: '0 auto',
 					textAlign: 'center',
-					minHeight: '400px',
-					backgroundColor: '#eea0280d'
+					minHeight: '400px'
 				}}
 			>
-				<Typography variant="h1">{'Online Catholic Community'}</Typography>
+				<Typography variant="h1" color="secondary.main">{'Online Catholic Community'}</Typography>
 				<Typography
 					variant="body2"
 					sx={{maxWidth: '600px', margin: '0 auto', mt: 2}}
