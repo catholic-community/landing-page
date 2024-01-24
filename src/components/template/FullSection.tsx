@@ -18,7 +18,6 @@ const FullSection = ({
 				width: '100vw',
 				p: 0,
 				m: 0,
-				backgroundColor: theme.palette.mode === 'light' ?  '#fffaf6' : theme.palette.background.paper,
 				...sx,
 				[theme.breakpoints.down('md')]: {
 					minHeight: 'auto'

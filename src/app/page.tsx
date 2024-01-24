@@ -22,7 +22,8 @@ export default function LandingPage() {
 					justifyContent: 'center',
 					margin: '0 auto',
 					textAlign: 'center',
-					minHeight: '400px'
+					minHeight: '400px',
+					backgroundColor: (theme) => theme.palette.mode === 'light' ?  '#fffaf6' : theme.palette.background.paper,
 				}}
 			>
 				<Typography variant="h1" color="secondary.main">{'Online Catholic Community'}</Typography>
