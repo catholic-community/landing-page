@@ -187,7 +187,7 @@ theme = createTheme(theme, {
 					style: {
 						'&:hover': {
 							backgroundColor: 'transparent',
-							color: theme.palette.primary.dark
+							color: theme.palette.primary.light
 						}
 					}
 				}

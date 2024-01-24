@@ -50,6 +50,10 @@ let theme = createTheme({
 		h6: {
 			fontSize: '1.25rem',
 			fontWeight: 500
+		},
+		body2: {
+			fontSize: '1.125rem',
+			fontWeight: 400
 		}
 	},
 	palette: {
@@ -179,6 +183,15 @@ theme = createTheme(theme, {
 						color: theme.palette.grey[800],
 						'&:hover': {
 							color: theme.palette.grey[900]
+						}
+					}
+				},
+				{
+					props: {variant: 'text'},
+					style: {
+						'&:hover': {
+							backgroundColor: 'transparent',
+							color: theme.palette.primary.light
 						}
 					}
 				}
