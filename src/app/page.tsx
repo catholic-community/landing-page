@@ -31,7 +31,7 @@ export default function LandingPage() {
 				<Typography variant="h1">{'Online Catholic Community'}</Typography>
 				<Typography sx={{maxWidth: '600px', margin: '0 auto', mt: 2}}>
 					{
-						'Junte-se a comunidade de católicos online. Encontre uma igreja próxima. Leia e compartilhe artigos. Poste dúvidas e respostas. Conect-se com irmãos e irmãs em Cristo de todo o mundo e enriqueça sua vida espiritual.'
+						'Junte-se a comunidade de católicos online. Encontre uma igreja próxima. Leia e compartilhe artigos. Poste dúvidas e respostas. Conecte-se com irmãos e irmãs em Cristo de todo o mundo e enriqueça sua vida espiritual.'
 					}
 				</Typography>
 			</FullSection>
