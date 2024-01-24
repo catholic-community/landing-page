@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import CssBaseline from '@mui/material/CssBaseline'
-import Divider from '@mui/material/Divider';
+import Divider from '@mui/material/Divider'
 import Drawer from '@mui/material/Drawer'
 import Footer from '../template/Footer'
 import Icon from '@mui/material/Icon'
@@ -25,10 +25,10 @@ const Header = () => {
 	const handleOpenMenu = () => {
 		setOpenMenu(true)
 	}
-	
+
 	return (
 		<AppBar
-			sx={(theme) => ({
+			sx={theme => ({
 				display: 'flex',
 				flexDirection: 'row',
 				alignItems: 'center',
@@ -67,19 +67,19 @@ const Header = () => {
 					</Icon>
 				</IconButton>
 				<Drawer
-					anchor='right'
+					anchor="right"
 					open={openMenu}
 					onClose={() => setOpenMenu(false)}
 				>
 					<List>
 						<ListItem disablePadding>
 							<ListItemButton onClick={() => window.open('/sign-up', '_self')}>
-								<ListItemText primary={'Cadastre-se'}/>
+								<ListItemText primary={'Cadastre-se'} />
 							</ListItemButton>
 						</ListItem>
 						<ListItem disablePadding>
 							<ListItemButton onClick={() => window.open('/login', '_self')}>
-								<ListItemText primary={'Entrar'}/>
+								<ListItemText primary={'Entrar'} />
 							</ListItemButton>
 						</ListItem>
 					</List>
