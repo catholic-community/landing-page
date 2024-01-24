@@ -26,18 +26,45 @@ let theme = createTheme({
 			'"Apple Color Emoji"',
 			'"Segoe UI Emoji"',
 			'"Segoe UI Symbol"'
-		].join(',')
+		].join(','),
+		h1: {
+			fontSize: '3rem',
+			fontWeight: 500
+		},
+		h2: {
+			fontSize: '2.5rem',
+			fontWeight: 500
+		},
+		h3: {
+			fontSize: '2rem',
+			fontWeight: 500
+		},
+		h4: {
+			fontSize: '1.75rem',
+			fontWeight: 500
+		},
+		h5: {
+			fontSize: '1.5rem',
+			fontWeight: 500
+		},
+		h6: {
+			fontSize: '1.25rem',
+			fontWeight: 500
+		}
 	},
 	palette: {
 		mode: 'dark',
 		primary: {
-			main: '#757575',
-			light: '#757575',
-			dark: '#757575',
+			main: '#EEA029',
+			light: '#FFB94E',
+			dark: '#DB9325',
 			contrastText: '#ffffff'
 		},
 		secondary: {
-			main: '#159CAB'
+			main: '#EEA029',
+			light: '#FFB94E',
+			dark: '#DB9325',
+			contrastText: '#ffffff'
 		},
 		common: {
 			black: '#FFF',
@@ -154,6 +181,15 @@ theme = createTheme(theme, {
 							color: theme.palette.grey[900]
 						}
 					}
+				},
+				{
+					props: {variant: 'text'},
+					style: {
+						'&:hover': {
+							backgroundColor: 'transparent',
+							color: theme.palette.primary.dark
+						}
+					}
 				}
 			]
 		},
@@ -191,7 +227,51 @@ theme = createTheme(theme, {
 				root: {
 					color: theme.palette.text.primary
 				}
-			}
+			},
+			variants: [
+				{
+					props: {variant: 'h1'},
+					style: {
+						fontSize: '3rem',
+						fontWeight: 400
+					}
+				},
+				{
+					props: {variant: 'h2'},
+					style: {
+						fontSize: '2.5rem',
+						fontWeight: 400
+					}
+				},
+				{
+					props: {variant: 'h3'},
+					style: {
+						fontSize: '2rem',
+						fontWeight: 500
+					}
+				},
+				{
+					props: {variant: 'h4'},
+					style: {
+						fontSize: '1.75rem',
+						fontWeight: 500
+					}
+				},
+				{
+					props: {variant: 'h5'},
+					style: {
+						fontSize: '1.5rem',
+						fontWeight: 600
+					}
+				},
+				{
+					props: {variant: 'h6'},
+					style: {
+						fontSize: '1.25rem',
+						fontWeight: 600
+					}
+				}
+			]
 		}
 	}
 })

@@ -26,18 +26,45 @@ let theme = createTheme({
 			'"Apple Color Emoji"',
 			'"Segoe UI Emoji"',
 			'"Segoe UI Symbol"'
-		].join(',')
+		].join(','),
+		h1: {
+			fontSize: '3rem',
+			fontWeight: 500
+		},
+		h2: {
+			fontSize: '2.5rem',
+			fontWeight: 500
+		},
+		h3: {
+			fontSize: '2rem',
+			fontWeight: 500
+		},
+		h4: {
+			fontSize: '1.75rem',
+			fontWeight: 500
+		},
+		h5: {
+			fontSize: '1.5rem',
+			fontWeight: 500
+		},
+		h6: {
+			fontSize: '1.25rem',
+			fontWeight: 500
+		}
 	},
 	palette: {
 		mode: 'light',
 		primary: {
-			main: '#e0e0e0',
-			light: '#e0e0e0',
-			dark: '#e0e0e0',
+			main: '#EEA029',
+			light: '#FFB94E',
+			dark: '#DB9325',
 			contrastText: '#ffffff'
 		},
 		secondary: {
-			main: '#1586ab'
+			main: '#5F372B',
+			light: '#7F4C3B',
+			dark: '#4E3121',
+			contrastText: '#ffffff'
 		},
 		common: {
 			black: '#000',
