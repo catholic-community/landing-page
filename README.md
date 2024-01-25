@@ -8,7 +8,7 @@
   <a href="#-licença">Licença</a>
 </p>
 
-![Mockup](./.github/preview.png)
+![Mockup](https://res.cloudinary.com/da2hgsrt7/image/upload/v1706141016/catholic-connect/preview_qdmcoq.png)
 
 ## ✨ Tecnologias
 
