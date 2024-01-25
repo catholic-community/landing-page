@@ -15,7 +15,7 @@ import ListItemText from '@mui/material/ListItemText'
 import Providers from '@/providers/Providers'
 import LogoType from '../LogoType'
 import MobileUp from './responsive/MobileUp'
-import MobileDown from './responsive/MobileDown'
+import Mobile from './responsive/Mobile'
 import {User as UserIcon} from '@phosphor-icons/react'
 import {List as ListIcon} from '@phosphor-icons/react'
 
@@ -60,7 +60,7 @@ const Header = () => {
 					</Button>
 				</Box>
 			</MobileUp>
-			<MobileDown>
+			<Mobile>
 				<IconButton sx={{p: 1}} onClick={handleOpenMenu}>
 					<Icon>
 						<ListIcon />
@@ -85,7 +85,7 @@ const Header = () => {
 					</List>
 					<Divider />
 				</Drawer>
-			</MobileDown>
+			</Mobile>
 		</AppBar>
 	)
 }

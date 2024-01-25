@@ -5,11 +5,11 @@ interface Props {
 	children?: React.ReactNode
 }
 
-const MobileDown = ({children}: Props) => {
+const Mobile = ({children}: Props) => {
 	const theme = useTheme()
 	const matches = useMediaQuery(theme.breakpoints.down('sm'))
 
 	return matches ? <>{children}</> : null
 }
 
-export default MobileDown
+export default Mobile
