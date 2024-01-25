@@ -6,7 +6,7 @@ import PageUnderConstructionAlert from '../../components/PageUnderConstructionAl
 export default function SignUp() {
 	return (
 		<OnboardingLayout>
-			<PageUnderConstructionAlert title="Sign Up" />
+			<PageUnderConstructionAlert title="Cadastre-se" />
 		</OnboardingLayout>
 	)
 }
