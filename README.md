@@ -8,10 +8,6 @@
   <a href="#-licença">Licença</a>
 </p>
 
-<p align="center">
-  <a href="https://catholiccommunity.social/" >https://catholiccommunity.social/</a>
-</p>
-
 ![Mockup](https://res.cloudinary.com/da2hgsrt7/image/upload/v1706141241/catholic-connect/preview.png)
 
 ## ✨ Tecnologias
