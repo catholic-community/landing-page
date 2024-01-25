@@ -8,6 +8,10 @@
   <a href="#-licença">Licença</a>
 </p>
 
+<p align="center">
+  <a href="https://catholiccommunity.social/" >https://catholiccommunity.social/</a>
+</p>
+
 ![Mockup](https://res.cloudinary.com/da2hgsrt7/image/upload/v1706141241/catholic-connect/preview.png)
 
 ## ✨ Tecnologias
@@ -17,9 +21,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Next.js](https://nextjs.org/)
 - [Cloudflare Pages](https://developers.cloudflare.com/pages)
 - [Material UI](https://mui.com/material-ui)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`c3`](https://developers.cloudflare.com/pages/get-started/c3).
 
 ## 💻 Projeto
 
