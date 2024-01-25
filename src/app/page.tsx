@@ -3,13 +3,13 @@
 import Image from 'next/image'
 import LandingPageLayout from '@/components/layout/LandingPageLayout'
 import FullSection from '@/components/template/FullSection'
-import ModuleInfoCard from '@/components/ModuleInfoCard'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
 import './page.module.css'
 import {Button, Card} from '@mui/material'
 import {ArrowRight} from '@phosphor-icons/react'
+import Mobile from '@/components/layout/responsive/Mobile'
 
 export default function LandingPage() {
 	return (
@@ -23,10 +23,15 @@ export default function LandingPage() {
 					margin: '0 auto',
 					textAlign: 'center',
 					minHeight: '400px',
-					backgroundColor: (theme) => theme.palette.mode === 'light' ?  '#fffaf6' : theme.palette.background.paper,
+					backgroundColor: theme =>
+						theme.palette.mode === 'light'
+							? '#fffaf6'
+							: theme.palette.background.paper
 				}}
 			>
-				<Typography variant="h1" color="secondary.main">{'Online Catholic Community'}</Typography>
+				<Typography variant="h1" color="secondary.main">
+					{'Online Catholic Community'}
+				</Typography>
 				<Typography
 					variant="body2"
 					sx={{maxWidth: '600px', margin: '0 auto', mt: 2}}
@@ -35,6 +40,16 @@ export default function LandingPage() {
 						'Junte-se a comunidade de católicos online. Encontre uma igreja próxima. Leia e compartilhe artigos. Poste dúvidas e respostas. Conecte-se com irmãos e irmãs em Cristo de todo o mundo e enriqueça sua vida espiritual.'
 					}
 				</Typography>
+				<Mobile>
+					<Button
+						variant="contained"
+						endIcon={<ArrowRight />}
+						onClick={() => window.open('/sign-up', '_self')}
+						sx={{mt: 3}}
+					>
+						{'Entrar na comunidade'}
+					</Button>
+				</Mobile>
 			</FullSection>
 			<FullSection
 				sx={{
@@ -130,7 +145,7 @@ export default function LandingPage() {
 				}}
 			>
 				<Card
-					sx={(theme) => ({
+					sx={theme => ({
 						display: 'flex',
 						flexDirection: 'column',
 						alignItems: 'flex-start',
@@ -149,8 +164,10 @@ export default function LandingPage() {
 						}
 					})}
 				>
-					<Typography variant="h2" component="h2">{'Mapa Interativo.'}</Typography>
-					<Typography variant='body2'>
+					<Typography variant="h2" component="h2">
+						{'Mapa Interativo.'}
+					</Typography>
+					<Typography variant="body2">
 						{
 							'Procurando uma igreja próxima? Nosso mapa interativo facilitará a descoberta de igrejas católicas ao seu redor. Seja para participar da missa, eventos especiais e descobrir horários de confissões, nosso recurso em desenvolvimento o ajudará a encontrar um lar espiritual, não importa onde esteja.'
 						}
