@@ -139,7 +139,7 @@ export default function LandingPage() {
 					display: 'flex',
 					alignItems: 'center',
 					justifyContent: 'center',
-					backgroundImage: "url('/images/section-3.svg')",
+					backgroundImage: "url('/images/section-3.png')",
 					backgroundRepeat: 'no-repeat',
 					backgroundPosition: 'center',
 					backgroundSize: 'cover'
@@ -154,6 +154,7 @@ export default function LandingPage() {
 						maxWidth: '350px',
 						boxSizing: 'content-box',
 						p: 3,
+						borderRadius: '1px',
 						[theme.breakpoints.down('md')]: {
 							margin: '0 auto',
 							maxWidth: '80%',
