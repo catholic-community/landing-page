@@ -10,7 +10,7 @@ import './page.module.css'
 import {Button, Card} from '@mui/material'
 import {ArrowRight} from '@phosphor-icons/react'
 import Mobile from '@/components/layout/responsive/Mobile'
-import {MAP_URL} from '@/config'
+import {AUTH_URL, MAP_URL} from '@/config'
 
 export default function LandingPage() {
 	return (
@@ -45,7 +45,7 @@ export default function LandingPage() {
 					<Button
 						variant="contained"
 						endIcon={<ArrowRight />}
-						onClick={() => window.open('/sign-up', '_self')}
+						onClick={() => window.open(AUTH_URL + '/sign-up', '_self')}
 						sx={{mt: 3}}
 					>
 						{'Entrar na comunidade'}
