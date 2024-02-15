@@ -1,4 +1,4 @@
-<h1 align="center">Catholic Community</h1>
+<h1 align="center">Landing Page</h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
