@@ -6,9 +6,7 @@ import useColorMode from '../hooks/useColorMode'
 const ThemeProvider = ({children}: {children?: React.ReactNode}) => {
 	const mode = useColorMode()
 
-	return (
-		<Theme theme={mode === 'light' ? lightTheme : darkTheme}>{children}</Theme>
-	)
+	return <Theme theme={lightTheme}>{children}</Theme>
 }
 
 export default ThemeProvider
